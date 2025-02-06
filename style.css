@@ -60,7 +60,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 5px 5px 17px black;
+    /*box-shadow: 5px 5px 17px black;*/
     margin-top: 100px;
     z-index: 3px;
 }

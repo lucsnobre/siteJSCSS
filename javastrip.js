@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.height="700px"
         card.style.boxShadow = "3px 4px 8px #636363";
         card.style.transition = "border-color 0.4s ease";
+       
 
         // Adiciona evento para mostrar a borda ao passar o mouse
         card.addEventListener("mouseover", function () {
@@ -115,14 +116,14 @@ document.addEventListener("DOMContentLoaded", function () {
         botao.style.padding = "54px";
         botao.style.border = "none";
         botao.style.borderRadius = "0 0 8px 8px";
-        botao.style.fontSize = "16px";
+        botao.style.fontSize = "30px";
         botao.style.fontWeight = "bold";
         botao.style.cursor = "pointer";
         botao.style.color = "#fff";
         botao.style.backgroundColor = categoria.cor;
         botao.style.transition = "background-color 0.3s ease, transform 0.2s ease";
-        botao.style.marginTop = '250px'
-        botao.style.boxShadow = '1px 1px 17px black'
+        botao.style.marginTop = '89px'
+       
         botao.style.zIndex="4"
         
         const conteudoCard = document.createElement("div");
