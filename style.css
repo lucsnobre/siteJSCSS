@@ -1,0 +1,100 @@
+:root {
+    --cor-hover: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*.menu {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: end;
+    gap: 77px;
+    padding: 8px 24px;
+}*/
+
+.menu img {
+    height: 37px;
+}
+
+.menu li {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.menu li:hover {
+    background-color: var(--cor-hover);
+    transition: 0.7s;
+}
+
+#cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 17px black;
+    margin-top: 100px;
+    z-index: 3px;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: var(--cor-botao, #00467F);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.card button:hover {
+    background-color: #222;
+    transition: 0.3s ease-out;
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajuste conforme necessário */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    margin-top:100px;
+}
+
+
+.card h3 {
+    margin-top: 10px;
+}
+
