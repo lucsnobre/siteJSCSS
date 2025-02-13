@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+body {
+     
+    font-family: 'Roboto', sans-serif;
+}
+
 ul, ol, li {
     list-style: none;
 }
@@ -80,10 +85,13 @@ a {
 
 
 .card button:hover {
-    background-color: #222;
-    transition: 0.3s ease-out;
+    background-color: #a8a8a8;
+    transition: 0.3s ease-out ;
 }
 
+.card:hover{
+    box-shadow: 3px 40px 1px #ffffff;
+}
 
 .card img {
     width: 100%;

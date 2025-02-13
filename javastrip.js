@@ -3,32 +3,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const categorias = [
         { 
-            nome: "Corteiz x Nike Air Max 95 SP", 
-            legenda: "Lançado como parte do pacote ‘Rules the World’ da marca de streetwear do Reino Unido, o Corteiz x Nike Air Max 95 SP ‘Aegean Storm’ atualiza o corredor retrô.", 
-            icon: "corteiz.webp", 
-            preco: "R$ 999,99",
-            cor: "#00467F"
+            nome: "Nike Shox TL White Metallic Platinum Black", 
+            legenda: "O Nike Shox TL leva o amortecimento mecânico para o próximo nível. Uma versão refeita do ícone de 2003, ele apresenta malha respirável na parte superior e tecnologia Nike Shox em todo o comprimento para absorção de impacto ideal e um visual ousado nas ruas.", 
+            icon: "grupies.png", 
+            preco: "R$ 1.270,00",
+            cor: "#807c7c",
+            link: "https://droper.app/d/9394/Corteiz_x_Nike_Air_Max_95_SP_Aegean_Storm"
         },
         { 
-            nome: "Nike Air Max 97 OG", 
-            legenda: "Ícone inspirado nos trens-bala japoneses, o Nike Air Max 97 OG 'Silver Bullet' redefine o estilo esportivo com seu visual futurista prateado e detalhes bem vibrantes.", 
-            icon: "bullet.webp", 
-            preco: "R$ 849,99",
-            cor: "#ba2626"
+            nome: "Nike Shox TL Vapor Green Racer Blue", 
+            legenda: "O Nike Shox TL leva o amortecimento mecânico para o próximo nível. Uma versão refeita do ícone de 2003, ele apresenta malha respirável na parte superior e tecnologia Nike Shox em todo o comprimento para absorção de impacto ideal e um visual ousado nas ruas.", 
+            icon: "shoxzu.png", 
+            preco: "R$ 1.599,90 ",
+            cor: "#56a1d1",
+            link: "https://droper.app/d/2468/Nike_Air_Max_97_White_Bullet"
         },
         { 
-            nome: "Nike Shox TL", 
-            legenda: "Com suas molas características, o Nike Shox TL oferece absorção de impacto incomparável e um estilo ousado e inovador nas ruas e ambientes urbanos.", 
+            nome: "Nike Shox TL Black", 
+            legenda: "O Nike Shox TL leva o amortecimento mecânico para o próximo nível. Uma versão refeita do ícone de 2003, ele apresenta malha respirável na parte superior e tecnologia Nike Shox em todo o comprimento para absorção de impacto ideal e um visual ousado nas ruas.", 
             icon: "shox.webp", 
-            preco: "R$ 729,99",
-            cor: "#474747"
+            preco: "R$ 900,00",
+            cor: "#b1b3b5",
+            link:"https://droper.app/d/6435/Nike_Shox_TL_Black_and_Max_Orange"
         },
         { 
-            nome: "Nike Air Max DN", 
-            legenda: "Diga olá à nova geração de tecnologia Air. O Air Max Dn apresenta o sistema Dynamic Air de tubos de pressão dupla, criando uma sensação reativa a cada passo, do dia ou noite.", 
-            icon: "quena.png" , 
-            preco: "R$ 899,99",
-            cor: "#a61c5c"
+            nome: "Nike Shox TL Sunrise", 
+            legenda: "O Nike Shox TL leva o amortecimento mecânico para o próximo nível. Uma versão refeita do ícone de 2003, ele apresenta malha respirável na parte superior e tecnologia Nike Shox em todo o comprimento para absorção de impacto ideal e um visual ousado nas ruas.", 
+            icon: "shoxsrs.png" , 
+            preco: "R$ 2.500,00",
+            cor: "#e07222",
+            link: "https://droper.app/d/1112/Nike_Shox_TL_Sunrise"
         }
     ];
 
@@ -48,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.textAlign = "center";
         card.style.width = "377px";
         card.style.height="700px"
-        card.style.boxShadow = "3px 4px 8px #636363";
+        card.style.boxShadow = "7px 7px 11px#787878";
         card.style.transition = "border-color 0.4s ease";
        
 
@@ -92,13 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
         preco.style.color = "#000";
         preco.style.marginBottom = "8px";
 
-        // Criando as estrelas de avaliação ⭐⭐⭐⭐⭐
-        const estrelas = document.createElement("div");
-        estrelas.innerHTML = "★★★★★";
-        estrelas.style.color = "#FFD700";
-        estrelas.style.fontSize = "40px";
-        estrelas.style.marginBottom = "10px";
-        estrelas.style.margin = 'px'
+        
 
         // Criando botão de comprar
         const botao = document.createElement("button");
@@ -144,17 +142,23 @@ botao.addEventListener("mouseleave", function () {
 
         botao.addEventListener("mouseover", function () {
             botao.style.backgroundColor = "#222";
+            
         });
+
+        botao.addEventListener("click", function () {
+            window.location.href = categoria.link;
+        });
+        
+        
 
         botao.addEventListener("mouseleave", function () {
             botao.style.backgroundColor = categoria.cor;
         });
-
+       
         card.appendChild(img);
         card.appendChild(title);
         card.appendChild(legenda);
         card.appendChild(preco);
-        card.appendChild(estrelas);
         card.appendChild(botao);
         cardContainer.appendChild(card);
     }
